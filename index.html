@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    
+<style>
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background: green;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+section {
+    padding: 2rem 1rem;
+}
+
+#about, #contact {
+    background: #f4f4f4;
+}
+
+.portfolio-item {
+    margin: 1rem 0;
+    
+}
+
+
+.portfolio-item img {
+    width: 300px;
+    height: 400x;
+    top: 880px;
+    left: 165px;
+    max-width: 100%;
+    height: auto;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin: 0.5rem 0 0.2rem;
+}
+
+form input, form textarea {
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+}
+
+form button {
+    padding: 0.7rem;
+    border: none;
+    background: #333;
+    color: #fff;
+    cursor: pointer;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background: #333;
+    color: #fff;
+}
+</style>
+
+</head>
+<body>
+    <header>
+        <h1>Hello, I'm Ken-Banigo Kelly </h1>
+<h1> I'm a Student</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I'm am currently a 400lv Computer Engineering Student in Rivers State University.</p>
+</br>
+<p> I value clarity, empathy, and integrity above all else. These ideals guide my approach to problem solving and life in general.</p>
+    </section>
+
+    <section id="portfolio">
+        <h2>Portfolio</h2>
+        <div class="portfolio-item">
+            <img src="project1.jpg" alt="Project 1">
+            <h3>Credibility</h3>
+            <p>Hi there! I'm Ken-Banigo Kelly, a basic <b>Web Designer</b> with a passion for <b> Front End Design</b>  For the past 8 years, I've been helping clients/companies achieve Desired Outcome through my programming skillset.
+
+                I'm particularly skilled in HTML, CSS, JS and always eager to learn and tackle new challenges.
+                
+                Outside of work, I enjoy readimg and playing games. 
+                
+                I'm always looking for new opportunities to collaborate on interesting projects. Feel free to reach out if you have any questions or need someone with my skillset!
+                </p>
+        </div>
+        </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Your Name. All rights reserved.</p>
+    </footer>
+
+<script>
+        document.querySelector('form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Form submitted!');
+        });
+    </script>
+
+    <script src="script.js"></script>
+</body>
+</html>
